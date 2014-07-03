@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		06C6D4101965458800FD3B46 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 06C6D40F1965458800FD3B46 /* main.c */; };
 		06C6D4121965458800FD3B46 /* hmac_sha256.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 06C6D4111965458800FD3B46 /* hmac_sha256.1 */; };
+		06C6D4191965460900FD3B46 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C6D4181965460900FD3B46 /* libssl.dylib */; };
+		06C6D41B1965460F00FD3B46 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C6D41A1965460F00FD3B46 /* libcrypto.dylib */; };
+		06C6D41D1965461600FD3B46 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C6D41C1965461600FD3B46 /* libresolv.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +31,9 @@
 		06C6D40C1965458800FD3B46 /* hmac-sha256 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "hmac-sha256"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06C6D40F1965458800FD3B46 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		06C6D4111965458800FD3B46 /* hmac_sha256.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = hmac_sha256.1; sourceTree = "<group>"; };
+		06C6D4181965460900FD3B46 /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = usr/lib/libssl.dylib; sourceTree = SDKROOT; };
+		06C6D41A1965460F00FD3B46 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
+		06C6D41C1965461600FD3B46 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06C6D41D1965461600FD3B46 /* libresolv.dylib in Frameworks */,
+				06C6D41B1965460F00FD3B46 /* libcrypto.dylib in Frameworks */,
+				06C6D4191965460900FD3B46 /* libssl.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,9 @@
 		06C6D4031965458800FD3B46 = {
 			isa = PBXGroup;
 			children = (
+				06C6D41C1965461600FD3B46 /* libresolv.dylib */,
+				06C6D41A1965460F00FD3B46 /* libcrypto.dylib */,
+				06C6D4181965460900FD3B46 /* libssl.dylib */,
 				06C6D40E1965458800FD3B46 /* hmac-sha256 */,
 				06C6D40D1965458800FD3B46 /* Products */,
 			);
@@ -227,6 +239,7 @@
 				06C6D4171965458800FD3B46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
